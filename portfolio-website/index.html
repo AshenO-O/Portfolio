@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Induwara Ashen - Computer Science Undergraduate Portfolio">
+    <title>Induwara Ashen | CS Undergraduate</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/profile.jpg" alt="IA" class="nav-avatar"><span class="nav-name">Induwara Ashen</span></a>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">Welcome to my portfolio</div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Induwara Ashen</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span id="typed-text"></span><span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Computer Science undergraduate at University of Westminster, passionate about software development, 
+                    web technologies, and creating impactful digital solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">Learn More</a>
+                    <a href="assets/resume.pdf" target="_blank" class="btn btn-outline">View CV</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">1+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="assets/profile.jpg" alt="Induwara Ashen" class="profile-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a Computer Science undergraduate at the Informatics Institute of Technology (IIT) affiliated with the University of Westminster. I have a strong passion for problem-solving and software development.</p>
+                    <p>My journey in tech began with curiosity about how things work, and that curiosity has driven me to explore various domains including web development, mobile applications, and backend systems.</p>
+                    <p>Currently, I'm seeking internship opportunities where I can contribute my skills and grow professionally in the tech industry.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>BSc (Hons) Computer Science</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Battaramulla, Colombo</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>induwara20240507@iit.ac.lk</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h3>My Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Frontend</h4>
+                            <div class="skill-tags">
+                                <span>HTML5/CSS3</span>
+                                <span>JavaScript</span>
+                                <span>React.js</span>
+                                <span>Flutter</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Backend</h4>
+                            <div class="skill-tags">
+                                <span>Java</span>
+                                <span>Python</span>
+                                <span>Spring Boot</span>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Tools & Design</h4>
+                            <div class="skill-tags">
+                                <span>Git/GitHub</span>
+                                <span>Figma</span>
+                                <span>VS Code</span>
+                                <span>Postman</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Soft Skills</h4>
+                            <div class="skill-tags">
+                                <span>Teamwork</span>
+                                <span>Communication</span>
+                                <span>Problem Solving</span>
+                                <span>Time Management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Preview -->
+    <section class="featured-projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Some of my recent work</p>
+            </div>
+            <div class="projects-grid" id="featuredProjects">
+                <!-- Projects loaded from JSON -->
+            </div>
+            <div class="view-all">
+                <a href="projects.html" class="btn btn-outline">View All Projects <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Induwara Ashen</h3>
+                <p>Computer Science Undergraduate</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="education.html">Education</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ashen-dissaratne-5aa468344/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/AshenO-O" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Induwara Ashen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
